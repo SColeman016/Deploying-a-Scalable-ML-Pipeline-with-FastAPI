@@ -3,7 +3,7 @@ from sklearn.metrics import fbeta_score, precision_score, recall_score
 from ml.data import process_data
 # TODO: add necessary import
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
+import xgboost as xgb
 
 # Optional: implement hyperparameter tuning.
 def train_model(X_train, y_train):
@@ -22,7 +22,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     # TODO: implement the function
-    model = RandomForestClassifier() 
+    model = xgb.XGBClassifier(random_state=4)
     model.fit(X_train, y_train)
     return model
 
