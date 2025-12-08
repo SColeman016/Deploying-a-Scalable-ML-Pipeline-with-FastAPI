@@ -12,9 +12,10 @@ from ml.model import (
     save_model,
     train_model,
 )
-# TODO: load the cencus.csv data
-project_path = "/home/sco1037/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-1/data/census.csv"
+# TODO: load the census.csv data
+project_path = "/home/sco1037/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-1"
 data_path = os.path.join(project_path, "data", "census.csv")
+
 print(data_path)
 data = pd.read_csv(data_path) # your code here
 
