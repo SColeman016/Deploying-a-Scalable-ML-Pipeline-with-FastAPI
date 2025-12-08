@@ -13,7 +13,7 @@ from ml.model import (
     train_model,
 )
 # TODO: load the cencus.csv data
-project_path = "C:\Users\moonf\census.csv"
+project_path = "/home/sco1037/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-1/data/census.csv"
 data_path = os.path.join(project_path, "data", "census.csv")
 print(data_path)
 data = pd.read_csv(data_path) # your code here
